@@ -14,5 +14,20 @@ first step is to create notebook in research folder then convert that into modul
 
 IMP: Considering vgg16 architecture model for base model ()
 
-It has 2 parts convolution layer and 
+vgg16 pre-trained on imagenet dataset
+It has 2 parts convolution layer(CNN) and FC layer(Fully connected layer) ANN  
+It has total 16 layers
+We'll create custom FC layer as it has 3 FC dense layer(contains many neurons) 
+we will use softmax activation function to separate two class
 
+Let's download base model from keras
+
+Last Part:
+
+create dvc.yaml file 
+
+commnads: dvc init in vs code terminal
+devc repro:  it will run dvc.yaml file
+dvc dag : graph of pipeline
+
+read about image to base64: used in flask application 
